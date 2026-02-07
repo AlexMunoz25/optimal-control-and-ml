@@ -260,9 +260,9 @@ Every notebook follows the same 5-cell structure:
 | Cell | Type     | Content                              |
 |------|----------|--------------------------------------|
 | 1    | Markdown | Section number and title             |
-| 2    | Markdown | Core equation(s) in LaTeX            |
-| 3    | Markdown | Explanation + worked example         |
-| 4    | Code     | Minimal Python implementation        |
+| 2    | Markdown | Core equation(s)                     |
+| 3    | Markdown | Example(s)                           |
+| 4    | Code     | Simple Python implementation         |
 | 5    | Markdown | References + Previous / Next links   |
 
 Notebooks are sequentially linked — each one points to the previous and next in the series.

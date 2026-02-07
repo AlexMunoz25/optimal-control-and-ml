@@ -1,12 +1,12 @@
-# Optimal Control and Machine Learning — Learning Hub
+# Optimal Control and Machine Learning — Jupyter Learning Hub
 
-Control and ML hub from mathematical foundations through dynamical systems, optimization, optimal control, and machine learning.
+Control and ML notebooks, covering mathematical foundations, dynamic systems, optimization, optimal control, and machine learning.
 
 ## Why This Repository
 
-This is my way to learn ...
+This is my way of learning
 
-## Repository Structure
+## Repository Structure So Far
 
 ```
 optimal-control-and-ml/
@@ -285,9 +285,9 @@ Notebooks are sequentially linked — each one points to the previous and next i
 | 05 Machine Learning | — | — | 📋 Planned |
 | 07 Reinforcement Learning | — | — | 📋 Planned |
 
-**Total: 155 notebooks completed.**
+**Current Total: 155 notebooks completed**
 
-## Requirements
+## How to Run it
 
 ```
 python -m venv .venv

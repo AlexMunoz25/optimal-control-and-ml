@@ -4,7 +4,7 @@ Control and ML notebooks, covering mathematical foundations, dynamic systems, op
 
 ## Why This Repository
 
-This is my way of learning
+This is my way of learning ...
 
 ## Repository Structure So Far
 
@@ -255,7 +255,7 @@ optimal-control-and-ml/
 
 ## Notebook Format
 
-Every notebook follows the same 5-cell structure:
+Every notebook follows a 5-cell structure:
 
 | Cell | Type     | Content                              |
 |------|----------|--------------------------------------|
@@ -287,13 +287,246 @@ Notebooks are sequentially linked — each one points to the previous and next i
 
 **Current Total: 155 notebooks completed**
 
-## How to Run it
+# Getting Started 
 
+These notebooks can be run using:
+
+- **VS Code (recommended)** — best way in my opinion 
+- **Classic Jupyter** — via Anaconda or standard Python
+
+This guide assumes **no prior developer setup** and walks through everything from scratch.
+
+---
+
+## 1. Install Git
+
+Git is required to download (clone) the repository.
+
+### macOS
+1. Open Terminal  
+2. Run:
+```bash
+git --version
 ```
+If Git is not installed, install via:
+```bash
+xcode-select --install
+```
+
+### Windows
+1. Go to: https://git-scm.com/download/win  
+2. Download and install with default settings  
+3. Restart terminal after install  
+
+### Linux (Ubuntu)
+```bash
+sudo apt update
+sudo apt install git
+```
+
+Verify:
+```bash
+git --version
+```
+
+---
+
+## 2. Install Python
+
+Python 3.10 or newer is recommended.
+
+Download from:
+https://www.python.org/downloads/
+
+During installation on Windows:
+✔ Check **"Add Python to PATH"**
+
+Verify installation:
+```bash
+python --version
+```
+or
+```bash
+python3 --version
+```
+
+---
+
+## 3. Clone the Repository
+
+Open a terminal (Terminal / PowerShell / Command Prompt).
+
+Choose where you want the project folder, then run:
+
+```bash
+git clone https://github.com/AlexMunoz25/optimal-control-and-ml.git
+cd optimal-control-and-ml
+```
+
+This downloads the repo and moves into it.
+
+---
+
+## 4. Create a Virtual Environment
+
+A virtual environment keeps dependencies isolated.
+
+```bash
 python -m venv .venv
+```
+
+### Activate it
+
+#### macOS / Linux
+```bash
 source .venv/bin/activate
+```
+
+#### Windows (PowerShell)
+```powershell
+.\.venv\Scripts\Activate.ps1
+```
+
+You should now see `(.venv)` in your terminal.
+
+---
+
+## 5. Install Dependencies
+
+```bash
+pip install --upgrade pip
 pip install -r requirements.txt
 ```
+
+---
+
+## 6. Install VS Code
+
+Download:
+https://code.visualstudio.com/
+
+Install normally.
+
+---
+
+## 7. Install VS Code Extensions
+
+Open VS Code → Extensions tab → install:
+
+- Python (Microsoft)
+- Jupyter (Microsoft)
+
+Or install from terminal:
+```bash
+code --install-extension ms-python.python
+code --install-extension ms-toolsai.jupyter
+```
+
+---
+
+## 8. Open the Project
+
+From inside the repo folder:
+```bash
+code .
+```
+
+Or open VS Code → File → Open Folder → select the repo folder.
+
+---
+
+## 9. Select Python Interpreter
+
+Top-right corner in VS Code:
+Select interpreter → choose:
+
+```
+.venv
+```
+
+---
+
+## 10. Run Notebooks
+
+Open any `.ipynb` file and press:
+
+- **Run All**
+- or run cells individually
+
+VS Code will automatically use the environment.
+
+---
+
+## Alternative Method — Classic Jupyter
+
+If you prefer standard Jupyter Notebook or Anaconda, follow below.
+
+---
+
+### Option A — Using pip
+
+```bash
+git clone https://github.com/AlexMunoz25/optimal-control-and-ml.git
+cd optimal-control-and-ml
+
+python -m venv .venv
+source .venv/bin/activate   # Windows equivalent if needed
+
+pip install -r requirements.txt
+pip install jupyter
+
+jupyter notebook
+```
+
+Browser will open automatically.
+
+---
+
+### Option B — Using Anaconda
+
+Install Anaconda:
+https://www.anaconda.com/download
+
+Then:
+
+```bash
+git clone https://github.com/AlexMunoz25/optimal-control-and-ml.git
+cd optimal-control-and-ml
+
+conda create -n ocml python=3.11
+conda activate ocml
+
+pip install -r requirements.txt
+jupyter notebook
+```
+
+---
+
+# Updating the Repo
+
+To pull latest changes later:
+
+```bash
+git pull
+```
+
+---
+
+## Deactivate Environment
+
+When finished:
+```bash
+deactivate
+```
+
+---
+
+### (Additional) Setup 
+
+VS Code + Jupyter setup walkthrough:
+
+https://www.youtube.com/watch?v=3jZ5vnv-LZc
+
 
 ## References so far
 

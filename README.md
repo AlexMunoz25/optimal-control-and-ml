@@ -504,7 +504,7 @@ deactivate
 
 VS Code + Jupyter setup walkthrough:
 
-https://www.youtube.com/watch?v=3jZ5vnv-LZc
+https://www.youtube.com/watch?v=9FZzw9nF8Rg
 
 ---
 

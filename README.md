@@ -4,7 +4,9 @@ Control and ML notebooks, covering mathematical foundations, dynamic systems, op
 
 ## Why This Repository
 
-This is my way of learning ...
+I learn best by building things. If these notes help someone else along the way, even better ...
+
+---
 
 ## Repository Structure So Far
 
@@ -16,7 +18,7 @@ optimal-control-and-ml/
 │
 ├── 01_Foundations/
 │   ├── 01_Linear_Algebra/                                    ← 155 notebooks
-│   │   ├── 01_Definitions/                                       (10 notebooks)
+│   │   ├── 01_Basic_Definitions/                                       (10 notebooks)
 │   │   │   ├── 01_sets.ipynb
 │   │   │   ├── 02_cartesian_plane.ipynb
 │   │   │   ├── 03_vector.ipynb
@@ -253,9 +255,11 @@ optimal-control-and-ml/
 └── Literature/                                               ← source textbooks (Markdown)
 ```
 
+---
+
 ## Notebook Format
 
-Every notebook follows a 5-cell structure:
+Every notebook follows a simple structure:
 
 | Cell | Type     | Content                              |
 |------|----------|--------------------------------------|
@@ -266,6 +270,8 @@ Every notebook follows a 5-cell structure:
 | 5    | Markdown | References + Previous / Next links   |
 
 Notebooks are sequentially linked — each one points to the previous and next in the series.
+
+---
 
 ## Current Progress
 
@@ -285,18 +291,19 @@ Notebooks are sequentially linked — each one points to the previous and next i
 | 05 Machine Learning | — | — | 📋 Planned |
 | 07 Reinforcement Learning | — | — | 📋 Planned |
 
-**Current Total: 155 notebooks completed**
+**Current Total: 155 notebooks**
+
+---
 
 # Getting Started 
 
-These notebooks can be run using:
 
-- **VS Code (recommended)** — best way in my opinion 
-- **Classic Jupyter** — via Anaconda or standard Python
+> [!IMPORTANT]
+> **You don't need to install anything to explore this hub.**
+> All notebooks render directly on GitHub — Just **leave a Star** and enjoy the ride! 🚀
 
-This guide assumes **no prior developer setup** and walks through everything from scratch.
+> The setup guide below is **only** for those who want to **run the Python code**, **modify notebooks**, or **experiment locally**. And assumes **no prior developer setup** and walks through everything from scratch.
 
----
 
 ## 1. Install Git
 
@@ -329,8 +336,6 @@ Verify:
 git --version
 ```
 
----
-
 ## 2. Install Python
 
 Python 3.10 or newer is recommended.
@@ -350,8 +355,6 @@ or
 python3 --version
 ```
 
----
-
 ## 3. Clone the Repository
 
 Open a terminal (Terminal / PowerShell / Command Prompt).
@@ -364,8 +367,6 @@ cd optimal-control-and-ml
 ```
 
 This downloads the repo and moves into it.
-
----
 
 ## 4. Create a Virtual Environment
 
@@ -389,8 +390,6 @@ source .venv/bin/activate
 
 You should now see `(.venv)` in your terminal.
 
----
-
 ## 5. Install Dependencies
 
 ```bash
@@ -398,16 +397,12 @@ pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
----
-
 ## 6. Install VS Code
 
 Download:
 https://code.visualstudio.com/
 
 Install normally.
-
----
 
 ## 7. Install VS Code Extensions
 
@@ -422,8 +417,6 @@ code --install-extension ms-python.python
 code --install-extension ms-toolsai.jupyter
 ```
 
----
-
 ## 8. Open the Project
 
 From inside the repo folder:
@@ -432,8 +425,6 @@ code .
 ```
 
 Or open VS Code → File → Open Folder → select the repo folder.
-
----
 
 ## 9. Select Python Interpreter
 
@@ -444,8 +435,6 @@ Select interpreter → choose:
 .venv
 ```
 
----
-
 ## 10. Run Notebooks
 
 Open any `.ipynb` file and press:
@@ -455,13 +444,9 @@ Open any `.ipynb` file and press:
 
 VS Code will automatically use the environment.
 
----
-
 ## Alternative Method — Classic Jupyter
 
 If you prefer standard Jupyter Notebook or Anaconda, follow below.
-
----
 
 ### Option A — Using pip
 
@@ -479,8 +464,6 @@ jupyter notebook
 ```
 
 Browser will open automatically.
-
----
 
 ### Option B — Using Anaconda
 
@@ -510,8 +493,6 @@ To pull latest changes later:
 git pull
 ```
 
----
-
 ## Deactivate Environment
 
 When finished:
@@ -519,14 +500,13 @@ When finished:
 deactivate
 ```
 
----
-
-### (Additional) Setup 
+### (Additional) Tutorial 
 
 VS Code + Jupyter setup walkthrough:
 
 https://www.youtube.com/watch?v=3jZ5vnv-LZc
 
+---
 
 ## References so far
 
